@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.london.inai_java.ui.splash.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" />
+    <fragment
+        android:id="@+id/authorizationFragment"
+        android:name="com.london.inai_java.ui.authorization.AuthorizationFragment"
+        android:label="fragment_authorization"
+        tools:layout="@layout/fragment_authorization" />
+    <fragment
+        android:id="@+id/accountFragment"
+        android:name="com.london.inai_java.ui.account.AccountFragment"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/onBoardingFragment"
+        android:name="com.london.inai_java.ui.onboarding.OnBoardingFragment"
+        android:label="fragment_on_boarding"
+        tools:layout="@layout/fragment_on_boarding" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.london.inai_java.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/employeeFragment"
+        android:name="com.london.inai_java.ui.employee.EmployeeFragment"
+        android:label="fragment_employee"
+        tools:layout="@layout/fragment_employee" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.london.inai_java.ui.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/pastryFragment"
+        android:name="com.london.inai_java.ui.pastry.PastryFragment"
+        android:label="fragment_pastry"
+        tools:layout="@layout/fragment_pastry" />
+    <fragment
+        android:id="@+id/compositionFragment"
+        android:name="com.london.inai_java.ui.composition.CompositionFragment"
+        android:label="fragment_composition"
+        tools:layout="@layout/fragment_composition" />
+    <fragment
+        android:id="@+id/productStockFragment"
+        android:name="com.london.inai_java.ui.product.ProductStockFragment"
+        android:label="fragment_product_stock"
+        tools:layout="@layout/fragment_product_stock" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.london.inai_java.ui.about.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+
+</navigation>

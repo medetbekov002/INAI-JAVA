@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">INAI-JAVA</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="choose_account">Выберите Аккаунт</string>
+    <string name="for_work_with_inai">Для работы с приложением INAI</string>
+    <string name="inai">INAI</string>
+    <string name="inai_gmail_com">INAI@gmail.com</string>
+    <string name="add_account">Добавить аккаунт</string>
+    <string name="condition_for_continue">Чтобы вы могли продолжать, мы\nпередадим ваше имя, адрес электронной\nпочты и фото профиля прилржения INAI.\nПрежде чем использовать его\nознакомьтесь с этими документами:</string>
+    <string name="privacy_policy">Политика конфиденциальности и \nусловия использования</string>
+    <string name="enter_via_google">Вход через Google</string>
+    <string name="continue_with_apple">Продолжить с Apple</string>
+    <string name="continue_with_vk">Продолжить с VK</string>
+    <string name="dear_">Дорогие гурманы и\nсладкоежки!</string>
+    <string name="begin">Начать</string>
+    <string name="list_of_workers">Список сотрудников</string>
+    <string name="list_of_pastry">Список изделий</string>
+    <string name="product_stock">Склад с продуктами</string>
+    <string name="about_us">О нас</string>
+    <string name="name">Ногоев Роман</string>
+    <string name="director">Директор</string>
+    <string name="instagram">Instagram</string>
+</resources>

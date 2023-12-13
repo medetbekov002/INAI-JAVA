@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_image"
+        android:layout_width="232dp"
+        android:layout_height="232dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        tools:src="@drawable/welcome" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/montserrat_italic"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        tools:text="@string/dear_" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="end|bottom"
+            android:fontFamily="@font/montserrat_regular"
+            android:padding="24dp"
+            android:text="@string/begin"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
