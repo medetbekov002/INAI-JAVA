@@ -5,4 +5,8 @@
     <color name="background_color">#6022DB</color>
     <color name="button_color">#7BB9CD</color>
     <color name="grey">#999999</color>
+    <color name="green">#00FF57</color>
+    <color name="light_green">#7BB9CD</color>
+    <color name="violet">#6022DB</color>
+    <color name="dark_grey">#858585</color>
 </resources>

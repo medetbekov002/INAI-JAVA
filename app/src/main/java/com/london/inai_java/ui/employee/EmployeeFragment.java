@@ -42,13 +42,13 @@ public class EmployeeFragment extends Fragment {
 
     private void loadData() {
         list = new ArrayList<>();
-        list.add(new Employee("Ногоев Роман", R.color.white));
-        list.add(new Employee("Ногоев Роман", R.color.white));
-        list.add(new Employee("Ногоев Роман", R.color.white));
-        list.add(new Employee("Ногоев Роман", R.color.white));
-        list.add(new Employee("Ногоев Роман", R.color.white));
-        list.add(new Employee("Ногоев Роман", R.color.white));
-        list.add(new Employee("Ногоев Роман", R.color.white));
+        list.add(new Employee("Ногоев Роман", R.drawable.ic_profile1));
+        list.add(new Employee("Мартынов Артём", R.drawable.ic_profile2));
+        list.add(new Employee("Мартынова Даша", R.drawable.ic_profile3));
+        list.add(new Employee("Власова Анастасия", R.drawable.ic_profile1));
+        list.add(new Employee("Алексеев Руслан", R.drawable.ic_profile2));
+        list.add(new Employee("Кузнецова Милана", R.drawable.ic_profile3));
+        list.add(new Employee("Смирнов Алексей", R.drawable.ic_profile1));
     }
 
     private void setAdapter() {

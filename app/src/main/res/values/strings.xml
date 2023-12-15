@@ -21,4 +21,7 @@
     <string name="name">Ногоев Роман</string>
     <string name="director">Директор</string>
     <string name="instagram">Instagram</string>
+    <string name="image">image</string>
+    <string name="list_of_products">Список изделий</string>
+    <string name="grocery_store">Склад с продуктами</string>
 </resources>
