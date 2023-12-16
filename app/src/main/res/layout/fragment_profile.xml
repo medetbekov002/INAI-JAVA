@@ -42,7 +42,7 @@
             android:layout_width="152dp"
             android:layout_height="152dp"
             android:layout_gravity="center"
-            android:src="@color/white" />
+            android:src="@drawable/ic_profile1" />
 
         <TextView
             android:id="@+id/tv_director"
