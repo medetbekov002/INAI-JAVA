@@ -1,5 +1,6 @@
 package com.london.inai_java.ui.about;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
@@ -67,5 +68,23 @@ public class AboutUsFragment extends Fragment {
 
             startActivity(whatsappIntent);
         });
+
+        // 2GIS intent
+        binding.tvAddress.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                String address = "Тимирязева 74";
+                try {
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("dgis://2gis.ru/routeSearch/rsType/car/to/" + Uri.encode(address)));
+                    startActivity(intent);
+                } catch (ActivityNotFoundException e) {
+                    // Если приложение 2ГИС не установлено, открываем в браузере
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse("https://2gis.ru/search/" + Uri.encode(address)));
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }
+
