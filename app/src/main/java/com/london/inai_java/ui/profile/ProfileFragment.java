@@ -1,10 +1,13 @@
 package com.london.inai_java.ui.profile;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
-import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.TextView;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
@@ -33,6 +36,27 @@ public class ProfileFragment extends Fragment {
                 NavHostFragment.findNavController(ProfileFragment.this).navigateUp();
             }
         });
+
+        // Find TextView using View Binding
+        TextView tvNumber = binding.tvNumber;
+
+        // Set click listener using View Binding
+        tvNumber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // Get phone number from TextView
+                String phoneNumber = tvNumber.getText().toString();
+
+                // Create intent to dial the phone number
+                Intent intent = new Intent(Intent.ACTION_DIAL);
+                intent.setData(Uri.parse("tel:" + phoneNumber));
+
+                // Check if there's an app to handle this intent
+                if (intent.resolveActivity(requireActivity().getPackageManager()) != null) {
+                    // Start the intent to make the call
+                    startActivity(intent);
+                }
+            }
+        });
     }
 }
-
